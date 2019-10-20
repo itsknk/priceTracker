@@ -21,7 +21,7 @@ async function checkPrice() {
     const priceNumber = parseFloat(priceString.replace('₹', ''))
     if (priceNumber < minPrice) {
       await sendEmail(
-        'Price Is Low',
+        'Price is Low',
         `The price on ${url} has dropped below ${minPrice}`
       )
     }
